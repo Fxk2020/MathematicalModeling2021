@@ -723,3 +723,79 @@ axe.contourf(X, Y, Z,
              offset=-2,  # 填充投影轮廓位置
              cmap='rainbow')
 ```
+
+#### 3.7）热度图
+
+imshow：热图（heatmap）是数据分析的常用方法，通过色差、亮度来展示数据的差异、易于理解。Python在Matplotlib库中，调用imshow()函数实现热图绘制。
+
+```python
+plt.imshow(
+    X,
+    cmap=None,
+    norm=None,
+    aspect=None,
+    interpolation=None,
+    alpha=None,
+    vmin=None,
+    vmax=None,
+    origin=None,
+    extent=None,
+    shape=None,
+    filternorm=1,
+    filterrad=4.0,
+    imlim=None,
+    resample=None,
+    url=None,
+    *,
+    data=None,
+    **kwargs,
+)
+```
+
+参数X：图像数据，支持数组形状
+
+参数cmap:将标量数据映射到色彩图
+
+参数norm：Normalize会对其进行缩放[0,1]的数据值内
+
+参数aspect：控制轴的纵横比。该参数可能使图像失真，即像素不是方形的
+
+参数interpolation：插值方法
+
+参数alpha：透明度
+
+参数origin：数组的[0,0]索引放在轴的左上角或左下角。{'upper', 'lower'}
+
+```python
+import numpy as np
+import tensorflow as tf
+import matplotlib.pyplot as plt
+
+mnist = tf.keras.datasets.mnist
+
+(x_train, y_train), (x_test, y_test) = mnist.load_data()
+x_train, x_test = x_train / 255.0, x_test / 255.0
+
+# model = tf.keras.models.Sequential([
+#   tf.keras.layers.Flatten(input_shape=(28, 28)),
+#   tf.keras.layers.Dense(128, activation='relu'),
+#   tf.keras.layers.Dropout(0.2),
+#   tf.keras.layers.Dense(10, activation='softmax')
+# ])
+print(x_train.shape)
+plt.figure()
+plt.imshow(x_train[4], cmap='hot', alpha=0.7, origin='lower')
+plt.colorbar()
+plt.grid(False)
+plt.show()
+
+# model.compile(optimizer='adam',
+#               loss='sparse_categorical_crossentropy',
+#               metrics=['accuracy'])
+#
+# model.fit(x_train, y_train, epochs=5)
+#
+# model.evaluate(x_test,  y_test, verbose=2)
+
+```
+
