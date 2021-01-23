@@ -88,6 +88,9 @@ linestyle是图像的样式：
 label是图像名称需要配合legend（图的注释）使用
 
 ```python
+plt.plot(epochs, acc, 'bo', label='accuracy')
+plt.plot(epochs, val_acc, 'b', label='val_accuracy')
+
 legend(loc='upper left')
 ```
 
