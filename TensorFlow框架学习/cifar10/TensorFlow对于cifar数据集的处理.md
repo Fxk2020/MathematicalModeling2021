@@ -63,6 +63,14 @@ model.compile(optimizer='adam',
 model.fit(train_images, train_labels, epochs=50)
 ```
 
+训练周期——epochs
+
+训练批次——batchsize
+
+验证集比例——validation_split
+
+![image-20210124163552377](C:\Users\26292\AppData\Roaming\Typora\typora-user-images\image-20210124163552377.png)
+
 #### 5.验证在测试集上的准确率
 
 ```python
