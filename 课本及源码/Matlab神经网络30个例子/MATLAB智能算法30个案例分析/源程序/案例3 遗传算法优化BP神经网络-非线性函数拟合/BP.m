@@ -1,5 +1,6 @@
 %读取数据
-data=xlsread('data.xls');
+% data=xlsread('data.xls');
+% load data data
 
 %训练预测数据
 data_train=data(1:113,:);
@@ -34,5 +35,5 @@ error=test_simu-output_train;
 
 plot(error)
 
-k=error./output_train
+k=error./output_train;
 

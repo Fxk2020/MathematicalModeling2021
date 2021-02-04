@@ -1,4 +1,4 @@
-web browser http://www.ilovematlab.cn/thread-62563-1-1.html
+
 %% 清空环境变量
 clc
 clear
@@ -215,4 +215,3 @@ plot(time,J,'r-');
 axis([0,0.2,0,1]);grid
 title('控制误差曲线','fontsize',12);
 xlabel('时间','fontsize',12);ylabel('控制误差','fontsize',12);
-web browser http://www.ilovematlab.cn/thread-62563-1-1.html

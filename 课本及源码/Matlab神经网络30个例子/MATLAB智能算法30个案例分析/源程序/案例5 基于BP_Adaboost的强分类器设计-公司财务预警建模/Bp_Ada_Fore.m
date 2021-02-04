@@ -1,4 +1,4 @@
-web browser http://www.ilovematlab.cn/thread-62166-1-1.html
+
 %% 清空环境变量
 clc
 clear
@@ -84,4 +84,3 @@ title('强预测器预测误差绝对值','fontsize',12)
 xlabel('预测样本','fontsize',12)
 ylabel('误差绝对值','fontsize',12)
 legend('强预测器预测','弱预测器预测')
-web browser http://www.ilovematlab.cn/thread-62166-1-1.html

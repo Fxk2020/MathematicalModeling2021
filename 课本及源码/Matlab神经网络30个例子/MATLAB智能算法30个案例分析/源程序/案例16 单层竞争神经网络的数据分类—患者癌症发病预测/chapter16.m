@@ -55,7 +55,6 @@ ac=vec2ind(a)
 Y=sim(net,T)
 yc=vec2ind(Y)
 
-web browser http://www.ilovematlab.cn/viewthread.php?tid=60656
 %%
 % 
 % <html>

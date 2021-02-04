@@ -101,7 +101,6 @@ plotsomnd(net)
 % 查看每个神经元的分类情况
 plotsomhits(net,P)
 
-web browser http://www.ilovematlab.cn/viewthread.php?tid=65106
 %%
 % 
 % <html>

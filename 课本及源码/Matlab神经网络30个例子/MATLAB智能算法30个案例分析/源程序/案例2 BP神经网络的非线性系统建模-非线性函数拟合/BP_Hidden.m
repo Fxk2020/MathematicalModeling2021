@@ -1,4 +1,3 @@
-web browser http://www.ilovematlab.cn/thread-60357-1-1.html
 %% 双隐含层BP神经网络
 %% 清空环境变量
 clc
@@ -24,7 +23,7 @@ output_test=output(n(1901:2000));
 
 %% BP网络训练
 % %初始化网络结构
-net=newff(inputn,outputn,[5 5]);
+net=newff(inputn,outputn,[5 5 5]);
 
 net.trainParam.epochs=100;
 net.trainParam.lr=0.1;
@@ -67,5 +66,4 @@ figure(3)
 plot((output_test-BPoutput)./BPoutput,'-*');
 title('神经网络预测误差百分比')
 
-errorsum=sum(abs(error))
-web browser http://www.ilovematlab.cn/thread-60357-1-1.html
+errorsum=sum(abs(error));

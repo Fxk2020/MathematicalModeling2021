@@ -1,4 +1,4 @@
-web browser http://www.ilovematlab.cn/thread-61659-1-1.html
+
 %% 清空环境变量
 clc
 clear
@@ -80,4 +80,3 @@ disp('适应度                   变量');
 x=bestchrom;
 % 窗口显示
 disp([bestfitness x]);
-web browser http://www.ilovematlab.cn/thread-61659-1-1.html

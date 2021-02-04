@@ -76,7 +76,6 @@ grnn_error=t_test-grnn_prediction_result';
 disp(['GRNN神经网络三项流量预测的误差为',num2str(abs(grnn_error))])
 save best desired_input desired_output p_test t_test grnn_error mint maxt
 
-web browser http://www.ilovematlab.cn/thread-65171-1-1.html
 %%
 %
 % <html>

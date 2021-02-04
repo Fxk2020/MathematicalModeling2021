@@ -24,7 +24,7 @@ F =20+x1.^2-10*cos(2*pi*x1)+x2.^2-10*cos(2*pi*x2);
 
 %% 网络建立和训练
 % 网络建立 输入为[x1;x2],输出为F。Spread使用默认。
-net=newrbe([x1;x2],F)
+net=newrbe([x1;x2],F);
 
 %% 网络的效果验证
 
@@ -43,7 +43,6 @@ ylabel('x2')
 zlabel('F')
 grid on 
 
-web browser http://www.ilovematlab.cn/viewthread.php?tid=65099
 %%
 % 
 % <html>

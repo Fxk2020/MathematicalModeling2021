@@ -1,4 +1,4 @@
-web browser http://www.ilovematlab.cn/thread-62166-1-1.html
+
 %% 清空环境变量
 clc
 clear
@@ -118,4 +118,3 @@ disp('强分类器分类误差率')
 
 disp('弱分类器分类误差率')
 (sum(error1)/(K*350))
-web browser http://www.ilovematlab.cn/thread-62166-1-1.html

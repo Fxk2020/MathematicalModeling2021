@@ -66,7 +66,6 @@ title('PNN 网络的预测效果')
 xlabel('预测样本编号')
 ylabel('分类结果')
 set(gca,'Ytick',[1:5])
-web browser http://www.ilovematlab.cn/viewthread.php?tid=63455
 %%
 %
 % <html>

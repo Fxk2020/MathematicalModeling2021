@@ -1,4 +1,4 @@
-web browser http://www.ilovematlab.cn/thread-60056-1-1.html
+% web browser http://www.ilovematlab.cn/thread-60056-1-1.html
 %% 清空环境变量
 clc
 clear

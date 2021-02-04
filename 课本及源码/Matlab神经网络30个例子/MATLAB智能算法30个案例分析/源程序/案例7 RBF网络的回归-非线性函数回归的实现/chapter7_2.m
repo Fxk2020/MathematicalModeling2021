@@ -49,6 +49,7 @@ ty=sim(net,tx);
 %% 使用图像，画出3维图
 
 % 真正的函数图像
+figure
 interval=0.1;
 [x1, x2]=meshgrid(-1.5:interval:1.5);
 F = 20+x1.^2-10*cos(2*pi*x1)+x2.^2-10*cos(2*pi*x2);
@@ -73,7 +74,6 @@ title('误差图像')
 
 set(gcf,'position',[300 ,250,900,400])
 
-web browser http://www.ilovematlab.cn/viewthread.php?tid=65099
 %%
 % 
 % <html>

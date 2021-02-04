@@ -76,7 +76,7 @@ xlabel('Ê±¼äµã')
 ylabel('Îó²î')
 hold off;
 
-web browser http://www.ilovematlab.cn/viewthread.php?tid=63640
+
 %%
 %
 % <html>

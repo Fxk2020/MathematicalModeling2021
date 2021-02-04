@@ -1,4 +1,4 @@
-web browser http://www.ilovematlab.cn/thread-60357-1-1.html
+% web browser http://www.ilovematlab.cn/thread-60357-1-1.html
 %% 清空环境变量
 clc
 clear
@@ -30,7 +30,7 @@ net.trainParam.lr=0.1;
 net.trainParam.goal=0.00004;
 
 %网络训练
-net=train(net,inputn,outputn);
+net;tr=train(net,inputn,outputn);
 
 %% BP网络预测
 %预测数据归一化
@@ -66,6 +66,6 @@ figure(3)
 plot((output_test-BPoutput)./BPoutput,'-*');
 title('神经网络预测误差百分比')
 
-errorsum=sum(abs(error))
+errorsum=sum(abs(error));
 
-web browser http://www.ilovematlab.cn/thread-60357-1-1.html
+% web browser http://www.ilovematlab.cn/thread-60357-1-1.html
